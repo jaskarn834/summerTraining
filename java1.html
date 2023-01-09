@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="abc">
+    <input type="text" id="abcd">
+    <button onclick="addition()">addition</button>
+    <button onclick="substraction()">substraction</button>
+    <button onclick="multiply()">multiply</button>
+    <button onclick="division()">division</button>
+    <script>
+        function addition()
+        {
+            var a=document.getElementById("abc").value;
+            var b=document.getElementById("abcd").value;
+            a=parseInt(a);
+            b=parseInt(b);
+            
+            c=a+b;
+            
+
+            var c;
+            document.write(a +"<br>");
+            document.write(b+"<br>");
+            document.write("addition of a and b"+c);
+
+        }
+
+        function substraction()
+        {
+            var a=document.getElementById("abc").value;
+            var b=document.getElementById("abcd").value;
+
+            a=parseInt(a);
+            b=parseInt(b);
+            
+            c=a-b;
+            
+
+            var c;
+            document.write(a+ "<br>");
+            document.write(b+ "<br>");
+            document.write("substraction of a and b" +c);
+        }
+
+        function multiply()
+        {
+            var a=document.getElementById("abc").value;
+            var b=document.getElementById("abcd").value;
+
+            a=parseInt(a);
+            b=parseInt(b);
+
+            c=a*b;
+
+            var c;
+            document.write(a+ "<br>");
+            document.write(b+ "<br>");
+            document.write("multiply of a and b" +c);
+        }
+
+        function division()
+        {
+            var a=document.getElementById("abc").value;
+            var b=document.getElementById("abcd").value;
+
+            a=parseInt(a);
+            b=parseInt(b);
+
+            c=a/b;
+
+            var c;
+            document.write(a+ "<br>");
+            document.write(b+ "<br>");
+            document.write("division of a and b" +c);
+        }
+       
+
+    </script>
+</body>
+</html>
